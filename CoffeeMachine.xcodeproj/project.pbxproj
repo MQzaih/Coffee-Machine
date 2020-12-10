@@ -24,6 +24,7 @@
 		06739980258165550062D50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06739983258165550062D50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06739985258165550062D50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0673998B258165970062D50F /* CoffeeMachine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoffeeMachine.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		06739976258165540062D50F /* CoffeeMachine */ = {
 			isa = PBXGroup;
 			children = (
+				0673998B258165970062D50F /* CoffeeMachine.entitlements */,
 				06739977258165540062D50F /* AppDelegate.swift */,
 				06739979258165540062D50F /* SceneDelegate.swift */,
 				0673997B258165540062D50F /* ViewController.swift */,
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoffeeMachine/CoffeeMachine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoffeeMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,8 +295,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Asal.CoffeeMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -301,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoffeeMachine/CoffeeMachine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoffeeMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,8 +314,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Asal.CoffeeMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
